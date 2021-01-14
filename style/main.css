@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color:hsl(204, 43%, 93%);
+}
+.main {
+  margin: 100px 300px;
+  
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.head .grid {
+  grid-template-columns: 1fr;
+}
+.head-section {
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 10px 10px 0 0;
+}
+.head-section h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+}
+.head-section h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 10px;
+}
+.head-section p {
+  color:rgb(201, 213, 221);
+  text-align: left;
+}
+
+.price-section .grid{
+  align-items: flex-start;
+}
+.price {
+  width: 100%;
+  background-color:  hsl(179, 62%, 43%);
+  padding: 30px;
+  border-radius: 0 0 0 10px;
+}
+.price h3 {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 15px;
+}
+.price p {
+  color: hsl(204, 43%, 93%);
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.price p > span {
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgb(229, 239, 245, 0.5);
+}
+.price .par {
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+.price input {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+}
+.price input:hover {
+  transform: scale(0.98);
+}
+.price input:focus {
+  outline: none;
+  border: none;
+}
+.write-up {
+  width: 100%;
+  background-color: rgb(42, 178, 175, 0.7);
+  padding: 30px;
+  border-radius: 0 0 10px 0;
+}
+.write-up h3 {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 15px;
+}
+.write-up ul {
+  color: rgb(229, 239, 245, 0.8);
+  list-style: none;
+}
+.write-up ul li {
+  font-size: 14px;
+  padding: 1.8px 0;
+}
+
+
+@media (max-width: 375px) {
+  .grid,
+  .head .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .main {
+    margin: 50px 0 0 0;
+  }
+  .head,
+  .price-section {
+    margin: 0 30px;
+  }
+  .price-section {
+    margin-bottom: 20px;
+  }
+  .price {
+    border-radius: 0px;
+  }
+  .write-up {
+    border-radius: 0 0 10px 10px;
+  }
+}
